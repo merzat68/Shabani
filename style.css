@@ -1,0 +1,72 @@
+/* 
+Theme Name: Shaabani
+Author: MerzaT
+Version: 1.0.0
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------Settings--------------------------------------------- */
+@font-face {
+  font-family: "Yekan";
+  src: url("./Fonts/Yekan.woff") format("woff"),
+    url("./Fonts/Yekan.ttf") format("truetype"),
+    url("./Fonts/Yekan.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "iranSans";
+  src: url("./Fonts/Iran-sans.woff") format("woff"),
+    url("./Fonts/Iran-sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:not([id*="wpadminbar"]) {
+  font-family: "iranSans";
+}
+html {
+  direction: rtl;
+}
+body.main__style--all {
+  background-color: #eeeeee !important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body.main__style--profile {
+  background-color: #eeeeee !important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.mt-6 {
+  margin-top: 5rem;
+}
+.my-6 {
+  margin: 5rem 0;
+}
+.website__container {
+  height: 100vh;
+}
+.container-fluid {
+  padding: 0;
+}
+/* ---------------------------------------------pagination styles--------------------------------------------- */
+.page-numbers {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 2px 0 0;
+  border: 1px solid #eee;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 600;
+}
+.page-numbers.current,
+a.page-numbers:hover {
+  background: #f9f9f9;
+}

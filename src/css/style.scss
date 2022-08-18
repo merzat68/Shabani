@@ -1,0 +1,12 @@
+/* 3rd party packages */
+@import "normalize.css";
+@import "../../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../fontawesome/scss/fontawesome.scss";
+
+/* custom style */
+@import "./modules/search.scss";
+@import "./modules/classes.scss";
+@import "./modules/header.scss";
+@import "./modules/footer.scss";
+@import "./modules/main-body.scss";
